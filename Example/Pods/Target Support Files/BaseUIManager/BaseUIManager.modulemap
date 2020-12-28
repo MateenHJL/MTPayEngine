@@ -1,0 +1,6 @@
+framework module BaseUIManager {
+  umbrella header "BaseUIManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

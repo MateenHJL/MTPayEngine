@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184C8FD82599D592002CEA6D /* TestPaymentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C8FD72599D592002CEA6D /* TestPaymentConfig.m */; };
 		5376EC795CFB5E520F9A009C /* Pods_PayEngine_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099455EB8E6477B384E0FD91 /* Pods_PayEngine_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,8 +39,10 @@
 
 /* Begin PBXFileReference section */
 		099455EB8E6477B384E0FD91 /* Pods_PayEngine_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayEngine_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A165370E259B014B2DA31FF /* PayEngine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PayEngine.podspec; path = ../PayEngine.podspec; sourceTree = "<group>"; };
+		0A165370E259B014B2DA31FF /* PayEngine.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PayEngine.podspec; path = ../PayEngine.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0ED49FF293042953D90723CB /* Pods-PayEngine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayEngine_Tests.release.xcconfig"; path = "Target Support Files/Pods-PayEngine_Tests/Pods-PayEngine_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		184C8FD62599D592002CEA6D /* TestPaymentConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPaymentConfig.h; sourceTree = "<group>"; };
+		184C8FD72599D592002CEA6D /* TestPaymentConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPaymentConfig.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PayEngine_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayEngine_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,12 +63,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7A9624A0779ED2395FDCE385 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7A9624A0779ED2395FDCE385 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8887AB1DC9A0A5584A30718F /* Pods-PayEngine_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayEngine_Example.debug.xcconfig"; path = "Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B0D0273C361EC3ACD20F3D51 /* Pods_PayEngine_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayEngine_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE6D59F5EE4B7F9D60050FD /* Pods-PayEngine_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayEngine_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PayEngine_Tests/Pods-PayEngine_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E2E0E46CD931F1297CA1B19B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E2E0E46CD931F1297CA1B19B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F2A0535109109783EF1AF0F7 /* Pods-PayEngine_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayEngine_Example.release.xcconfig"; path = "Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +106,6 @@
 				CEE6D59F5EE4B7F9D60050FD /* Pods-PayEngine_Tests.debug.xcconfig */,
 				0ED49FF293042953D90723CB /* Pods-PayEngine_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +151,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MTViewController.h */,
 				6003F5A6195388D20070C39A /* MTViewController.m */,
+				184C8FD62599D592002CEA6D /* TestPaymentConfig.h */,
+				184C8FD72599D592002CEA6D /* TestPaymentConfig.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -208,7 +212,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3FEED6315BEC5A45E042205B /* [CP] Embed Pods Frameworks */,
+				419A421A1A5EB7D1AB17D612 /* [CP] Embed Pods Frameworks */,
+				BC208B5733B582B4DBB09353 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +253,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "455528514@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 9VR5BQK66K;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +267,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,22 +305,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3FEED6315BEC5A45E042205B /* [CP] Embed Pods Frameworks */ = {
+		419A421A1A5EB7D1AB17D612 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PayEngine/PayEngine.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/ISRemoveNull/ISRemoveNull.framework",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
+				"${BUILT_PRODUCTS_DIR}/WZLBadge/WZLBadge.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PayEngine.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISRemoveNull.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WZLBadge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC208B5733B582B4DBB09353 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example-resources.sh",
+				"${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1B720A8567E2B8FD8EADF07 /* [CP] Check Pods Manifest.lock */ = {
@@ -366,6 +412,7 @@
 			files = (
 				6003F59E195388D20070C39A /* MTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MTViewController.m in Sources */,
+				184C8FD82599D592002CEA6D /* TestPaymentConfig.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,12 +541,15 @@
 			baseConfigurationReference = 8887AB1DC9A0A5584A30718F /* Pods-PayEngine_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9VR5BQK66K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayEngine/PayEngine-Prefix.pch";
 				INFOPLIST_FILE = "PayEngine/PayEngine-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.player.fun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AoPeiWan_Dev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +560,15 @@
 			baseConfigurationReference = F2A0535109109783EF1AF0F7 /* Pods-PayEngine_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9VR5BQK66K;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayEngine/PayEngine-Prefix.pch";
 				INFOPLIST_FILE = "PayEngine/PayEngine-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.player.fun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = AoPeiWan_Dev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

@@ -8,12 +8,53 @@
 
 #import "MTAppDelegate.h"
 
+#import <PayEngine/PaymentCommentFile.h>
+#import <WXApi.h>
+#import <AlipaySDK/AlipaySDK.h>
+#import "TestPaymentConfig.h"
+
+#define kWechatAppId @"wx06ce8c1cdbd8d671"
+#define kWechatAppSecret @"2723649fe04637a7edd738ae2b2e34b9"
+#define kWechatLoginKey @"kWechatLoginKey"
+#define kWechatRedirectURL @"https://app.sumansoul.com/go_html/suman_web/"
+
 @implementation MTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //微信
+    [[PaymentConfigManager sharePaymentConfigManager] setupPaymentEngineWithConfig:[[TestPaymentConfig alloc] init]];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
+{
+    if (url.absoluteString.length == 0)
+    {
+        return NO;
+    }
+    return [[PayEngine sharePayEngine] checkCallBackWithUrl:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    if (url.absoluteString.length == 0)
+    {
+        return NO;
+    }
+    return [[PayEngine sharePayEngine] checkCallBackWithUrl:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    if (url.absoluteString.length == 0)
+    {
+        return NO;
+    }
+    return [[PayEngine sharePayEngine] checkCallBackWithUrl:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

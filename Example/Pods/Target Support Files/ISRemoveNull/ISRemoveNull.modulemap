@@ -1,0 +1,6 @@
+framework module ISRemoveNull {
+  umbrella header "ISRemoveNull-umbrella.h"
+
+  export *
+  module * { export * }
+}
