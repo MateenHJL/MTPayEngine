@@ -8,10 +8,11 @@
 
 #import "MTAppDelegate.h"
 
-#import <PayEngine/PaymentCommentFile.h>
-#import <WXApi.h>
-#import <AlipaySDK/AlipaySDK.h>
+#import <WXApi.h> 
+
 #import "TestPaymentConfig.h"
+#import "PaymentConfigManager.h"
+#import "PayEngine.h"
 
 #define kWechatAppId @"wx06ce8c1cdbd8d671"
 #define kWechatAppSecret @"2723649fe04637a7edd738ae2b2e34b9"

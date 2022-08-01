@@ -9,9 +9,9 @@
 #import "PayEngine.h"
 #import "BasePayItem.h"
 #import "PaymentConfigManager.h"
-#import "WXApi.h"
-#import <AlipaySDK/AlipaySDK.h>
+#import "WXApi.h" 
 #import "AliPayItem.h"
+#import <AlipaySDK/AlipaySDK.h>
 
 @implementation PayEngine
 

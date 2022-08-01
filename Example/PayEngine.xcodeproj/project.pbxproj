@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		184C8FD82599D592002CEA6D /* TestPaymentConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 184C8FD72599D592002CEA6D /* TestPaymentConfig.m */; };
+		24DF17832897B4D300962111 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF17822897B4D300962111 /* CoreTelephony.framework */; };
 		5376EC795CFB5E520F9A009C /* Pods_PayEngine_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099455EB8E6477B384E0FD91 /* Pods_PayEngine_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -43,6 +44,7 @@
 		0ED49FF293042953D90723CB /* Pods-PayEngine_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayEngine_Tests.release.xcconfig"; path = "Target Support Files/Pods-PayEngine_Tests/Pods-PayEngine_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		184C8FD62599D592002CEA6D /* TestPaymentConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPaymentConfig.h; sourceTree = "<group>"; };
 		184C8FD72599D592002CEA6D /* TestPaymentConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPaymentConfig.m; sourceTree = "<group>"; };
+		24DF17822897B4D300962111 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		6003F58A195388D20070C39A /* PayEngine_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayEngine_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24DF17832897B4D300962111 /* CoreTelephony.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -133,6 +136,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24DF17822897B4D300962111 /* CoreTelephony.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -213,7 +217,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				419A421A1A5EB7D1AB17D612 /* [CP] Embed Pods Frameworks */,
-				BC208B5733B582B4DBB09353 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,7 +257,7 @@
 				ORGANIZATIONNAME = "455528514@qq.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 9VR5BQK66K;
+						DevelopmentTeam = QCTBN38NTJ;
 						ProvisioningStyle = Manual;
 					};
 					6003F5AD195388D20070C39A = {
@@ -339,24 +342,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BC208B5733B582B4DBB09353 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example-resources.sh",
-				"${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayEngine_Example/Pods-PayEngine_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F1B720A8567E2B8FD8EADF07 /* [CP] Check Pods Manifest.lock */ = {
@@ -542,14 +527,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9VR5BQK66K;
+				DEVELOPMENT_TEAM = QCTBN38NTJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayEngine",
+					"$(PROJECT_DIR)/PayEngine/iOS_SDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayEngine/PayEngine-Prefix.pch";
 				INFOPLIST_FILE = "PayEngine/PayEngine-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayEngine/iOS_SDK",
+				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.player.fun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ly.yqLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AoPeiWan_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = YQLive_dev;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -560,15 +554,25 @@
 			baseConfigurationReference = F2A0535109109783EF1AF0F7 /* Pods-PayEngine_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 9VR5BQK66K;
+				DEVELOPMENT_TEAM = QCTBN38NTJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayEngine",
+					"$(PROJECT_DIR)/PayEngine/iOS_SDK",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PayEngine/PayEngine-Prefix.pch";
 				INFOPLIST_FILE = "PayEngine/PayEngine-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayEngine/iOS_SDK",
+				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.player.fun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ly.yqLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = AoPeiWan_Dev;
+				PROVISIONING_PROFILE_SPECIFIER = YQLive_adhoc;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

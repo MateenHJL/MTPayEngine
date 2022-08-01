@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <PayEngine/PaymentCommentFile.h>
+#import "PaymentConfigDataSource.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PayEngine'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A short description of PayEngine.'
 
 # This description is used to generate tags and improve search results.
@@ -36,8 +36,12 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.static_framework = true
-  s.dependency 'AlipaySDK-iOS'
+  s.frameworks = 'CFNetwork', 'CoreMotion', 'CoreGraphics', 'SystemConfiguration', 'CoreText', 'QuartzCore' , 'CoreTelephony'
+  s.static_framework = true 
   s.dependency 'WechatOpenSDK'
+  s.libraries = 'z', 'sqlite3.0', 'c++'
+  s.header_dir = "openssl"
+  s.vendored_frameworks = 'PayEngine/Classes/iOS_SDK/AlipaySDK.framework'
+  s.vendored_libraries = 'PayEngine/Classes/iOS_SDK/libcrypto.a', 'PayEngine/Classes/iOS_SDK/libssl.a'
    
 end

@@ -7,8 +7,8 @@
 //
 
 #import "AliPayItem.h"
-#import <AlipaySDK/AlipaySDK.h>
 #import "PayDataModel.h"
+#import <AlipaySDK/AlipaySDK.h>
 
 @implementation AliPayItem
 

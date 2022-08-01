@@ -1,5 +1,4 @@
 PODS:
-  - AlipaySDK-iOS (15.7.9)
   - BaseUIManager (1.4.0):
     - ChameleonFramework
     - KVOController
@@ -26,8 +25,7 @@ PODS:
   - ISRemoveNull (0.0.3)
   - KVOController (1.2.0)
   - MGSwipeTableCell (1.6.11)
-  - PayEngine (1.0.0):
-    - AlipaySDK-iOS
+  - PayEngine (1.0.1):
     - WechatOpenSDK
   - pop (1.0.12)
   - WechatOpenSDK (1.8.7.1)
@@ -42,7 +40,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AlipaySDK-iOS
     - BaseUIManager
     - BaseViewControllerManager
     - ChameleonFramework
@@ -63,7 +60,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AlipaySDK-iOS: 94ff4c0e17c5e7d126b8207596d5033006534c25
   BaseUIManager: cff6bdbb64641a33a5640f666a834c2fdfd5103a
   BaseViewControllerManager: dc826e9d8f1ce118c5a19bcf0f170efded0f4f94
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
@@ -74,7 +70,7 @@ SPEC CHECKSUMS:
   ISRemoveNull: 7fb2bb73a9f173cd1d12e9cbd7c7d8766d939b4d
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   MGSwipeTableCell: b804e4e450dee439c42250be90bd50458bf67fce
-  PayEngine: f8ba078d80cb203586c1e10a734f064fc08957da
+  PayEngine: 3a11f891984cd0a4bcd9625fad88e2977dd713cf
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
   WZLBadge: 9ec779dcfd94c825518b395e8315fccaabff1bfa
@@ -82,4 +78,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: aa91cb84bb236345a83f09869eac0b75b28f0fd4
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

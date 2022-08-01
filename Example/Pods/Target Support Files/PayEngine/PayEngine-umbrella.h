@@ -11,6 +11,10 @@
 #endif
 
 #import "BasePayItem.h"
+#import "AFServiceCenter.h"
+#import "AFServiceResponse.h"
+#import "AlipaySDK.h"
+#import "APayAuthInfo.h"
 #import "PayEngine.h"
 #import "AliPayItem.h"
 #import "WechatPayItem.h"
@@ -19,6 +23,6 @@
 #import "PaymentConfigManager.h"
 #import "PayDataModel.h"
 
-FOUNDATION_EXPORT double PayEngineVersionNumber;
-FOUNDATION_EXPORT const unsigned char PayEngineVersionString[];
+FOUNDATION_EXPORT double opensslVersionNumber;
+FOUNDATION_EXPORT const unsigned char opensslVersionString[];
 

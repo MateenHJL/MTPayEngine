@@ -1,4 +1,4 @@
-framework module PayEngine {
+framework module openssl {
   umbrella header "PayEngine-umbrella.h"
 
   export *
