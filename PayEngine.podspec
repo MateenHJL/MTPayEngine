@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PayEngine'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A short description of PayEngine.'
 
 # This description is used to generate tags and improve search results.
@@ -39,5 +39,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.dependency 'AlipaySDK-iOS'
   s.dependency 'WechatOpenSDK'
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7 armv7s x86_64' }
    
 end
