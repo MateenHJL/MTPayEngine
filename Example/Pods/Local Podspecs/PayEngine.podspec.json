@@ -17,30 +17,13 @@
     "ios": "9.0"
   },
   "source_files": "PayEngine/Classes/**/*",
-  "frameworks": [
-    "CFNetwork",
-    "CoreMotion",
-    "CoreGraphics",
-    "SystemConfiguration",
-    "CoreText",
-    "QuartzCore",
-    "CoreTelephony"
-  ],
   "static_framework": true,
   "dependencies": {
+    "AlipaySDK-iOS": [
+
+    ],
     "WechatOpenSDK": [
 
     ]
-  },
-  "libraries": [
-    "z",
-    "sqlite3.0",
-    "c++"
-  ],
-  "header_dir": "openssl",
-  "vendored_frameworks": "PayEngine/Classes/iOS_SDK/AlipaySDK.framework",
-  "vendored_libraries": [
-    "PayEngine/Classes/iOS_SDK/libcrypto.a",
-    "PayEngine/Classes/iOS_SDK/libssl.a"
-  ]
+  }
 }
